@@ -8,4 +8,5 @@ class ApplicationController < Sinatra::Base
   end
 
   enable :sessions
+
 end
