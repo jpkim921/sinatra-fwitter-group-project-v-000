@@ -1,4 +1,4 @@
-class UsersController < ApplicationController
+class UserController < ApplicationController
   get '/signup' do
     if !logged_in?
       erb :'/users/signup'
