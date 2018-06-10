@@ -2,6 +2,7 @@ require './config/environment'
 require 'rack-flash'
 
 class UserController < ApplicationController
+  use Rack::Flash
 
   get '/' do
     erb :'/users/homepage'
