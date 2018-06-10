@@ -22,7 +22,7 @@ class UserController < ApplicationController
 
     session[:id] = @user.id
 
-        redirect '/tweets'
+    redirect '/tweets'
   end
 
 
