@@ -41,13 +41,13 @@ class UserController < ApplicationController
       redirect '/tweets'
     else
       erb :'/users/login'
-    
+
     erb :'/users/login'
   end
 
   post '/login' do
 
-    redirect 
+    redirect
     # erb :'/user/login'
   end
 
