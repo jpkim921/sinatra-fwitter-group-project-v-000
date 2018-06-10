@@ -18,8 +18,8 @@ class UserController < ApplicationController
     else
       @user = User.create(params)
     end
-  
-    binding.pry
+
+    # binding.pry
     redirect '/tweets'
   end
 
