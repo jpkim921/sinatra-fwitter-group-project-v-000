@@ -30,7 +30,7 @@ class UserController < ApplicationController
 
   helpers do
     def logged_in?
-      !!current_user
+      !!session[:id]
     end
 
     def current_user
