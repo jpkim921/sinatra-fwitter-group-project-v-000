@@ -37,6 +37,8 @@ class UserController < ApplicationController
     # erb :'/user/login'
   end
 
+
+
   helpers do
     def logged_in?
       !!session[:id]
