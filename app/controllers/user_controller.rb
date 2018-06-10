@@ -45,6 +45,8 @@ class UserController < ApplicationController
   post '/login' do
     binding.pry
     @user = User.find_by(:username => params[:username])
+    session[:user_id] = @user.id
+    
   end
 
 
