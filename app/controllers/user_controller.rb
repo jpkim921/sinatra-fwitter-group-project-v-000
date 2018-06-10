@@ -7,7 +7,6 @@ class UserController < ApplicationController
   end
 
   get '/signup' do
-
     if logged_in?
       redirect '/tweets'
     elsif !logged_in?
