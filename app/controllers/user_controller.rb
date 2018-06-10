@@ -23,14 +23,6 @@ class UserController < ApplicationController
       session[:id] = @user.id
       redirect '/tweets'
     end
-
-    # binding.pry
-    # if logged_in?
-    #   redirect '/tweets'
-    # else
-    #   redirect '/login'
-    # end
-
   end
 
   # get '/login' do
