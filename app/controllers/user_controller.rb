@@ -14,7 +14,7 @@ class UserController < ApplicationController
   post '/signup' do
     @user = Username.create(username: params["username"], email: params["email"], password: params["password"])
     binding.pry
-    redirect '/tweets'
+    # redirect '/tweets'
   end
 
 
