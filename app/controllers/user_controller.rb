@@ -14,7 +14,7 @@ class UserController < ApplicationController
   post '/signup' do
     @placeholder_params = params
     # binding.pry
-    erb :'/user/placeholder'
+    redirect '/tweets'
   end
 
 
