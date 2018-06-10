@@ -44,6 +44,7 @@ class UserController < ApplicationController
 
   post '/login' do
     binding.pry
+    @user = User.find(:username => params[:username], :password => params[:password])
   end
 
 
