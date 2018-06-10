@@ -4,8 +4,10 @@ class ApplicationController < Sinatra::Base
   configure do
     set :public_folder, 'public'
     set :views, 'app/views'
-    set :session_secret, "secret"
+    
+    # need to have the two lines below to have access to the sessions hash
     enable :sessions
+    set :session_secret, "secret"
   end
 
   helpers do
