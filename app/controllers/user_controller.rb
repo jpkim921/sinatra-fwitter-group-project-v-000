@@ -21,6 +21,7 @@ class UserController < ApplicationController
     else
       @user = User.create(params)
       session[:id] = @user.id
+      redirect '/tweets'
     end
 
     # binding.pry
