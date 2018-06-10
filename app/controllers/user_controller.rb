@@ -3,7 +3,7 @@ require './config/environment'
 class UserController < ApplicationController
 
   get '/' do
-    erb :'/user/homepage'
+    erb :'/users/homepage'
   end
 
   get '/signup' do
