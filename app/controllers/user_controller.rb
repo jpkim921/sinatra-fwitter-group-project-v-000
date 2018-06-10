@@ -19,10 +19,13 @@ class UserController < ApplicationController
       @user = User.create(params)
       binding.pry
     end
-
     session[:id] = @user.id
 
-    redirect '/tweets'
+    if logged_in?
+      redirect '/tweets'
+    else
+      redirect '/login'
+    end
   end
 
 
