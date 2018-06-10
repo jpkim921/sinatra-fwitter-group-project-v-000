@@ -12,9 +12,15 @@ class UserController < ApplicationController
   end
 
   post '/signup' do
-    @user = User.create(params)
+
+    if params.values.any?{|param| param == ""}
+      redirect '/signup'
+    else
+      @user = User.create(params)
+    end
+  
     binding.pry
-    # redirect '/tweets'
+    redirect '/tweets'
   end
 
 
