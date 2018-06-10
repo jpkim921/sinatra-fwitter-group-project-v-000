@@ -13,7 +13,7 @@ class UserController < ApplicationController
 
   post '/signup' do
     @placeholder_params = params
-    binding.pry
+    # binding.pry
     erb :'/user/placeholder'
   end
 
