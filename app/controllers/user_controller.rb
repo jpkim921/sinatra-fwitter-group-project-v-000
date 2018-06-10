@@ -20,6 +20,7 @@ class UserController < ApplicationController
       binding.pry
     end
 
+    session[:id] = @user.id
     # binding.pry
     redirect '/tweets'
   end
