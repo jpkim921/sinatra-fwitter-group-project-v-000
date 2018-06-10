@@ -30,7 +30,7 @@ class UserController < ApplicationController
   end
 
   get 'login' do
-
+    erb :'/user/login'
   end
 
   helpers do
