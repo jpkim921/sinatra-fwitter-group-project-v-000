@@ -42,6 +42,10 @@ class UserController < ApplicationController
     erb :'users/login'
   end
 
+  post '/login' do
+    
+  end
+
 
   helpers do
     def logged_in?
