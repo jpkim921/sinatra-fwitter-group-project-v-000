@@ -17,6 +17,5 @@ class UserController < ApplicationController
     erb :'/user/placeholder'
   end
 
-  # get '/placeholder'
 
 end
