@@ -7,7 +7,7 @@ class UserController < ApplicationController
   end
 
   get '/signup' do
-      erb :'users/signup'
+    erb :'users/signup'
 
     # if logged_in?
     #   # binding.pry
