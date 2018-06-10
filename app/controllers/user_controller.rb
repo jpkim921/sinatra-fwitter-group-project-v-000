@@ -29,8 +29,12 @@ class UserController < ApplicationController
 
   end
 
-  get 'login' do
+  get '/login' do
     erb :'/user/login'
+  end
+
+  post '/login' do
+    # erb :'/user/login'
   end
 
   helpers do
