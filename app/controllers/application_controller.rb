@@ -21,13 +21,13 @@ class ApplicationController < Sinatra::Base
     # end
 
 
-    # def logged_in?
-    #   !!sesesion[:user_id]
-    # end
-    #
-    # def current_user
-    #   User.find(session[:user_id])
-    # end
+    def logged_in?
+      !!sesesion[:user_id]
+    end
+    
+    def current_user
+      User.find(session[:user_id])
+    end
 
   end
 
