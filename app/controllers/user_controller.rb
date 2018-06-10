@@ -46,7 +46,7 @@ class UserController < ApplicationController
 
   post '/login' do
 
-    redirect
+    # redirect
     # erb :'/user/login'
   end
 
