@@ -39,7 +39,11 @@ class UserController < ApplicationController
   end
 
   get '/login' do
-    erb :'users/login'
+    if !logged_in?
+     erb :'users/login'
+   else
+     redirect '/tweets'
+   end
   end
 
   post '/login' do
