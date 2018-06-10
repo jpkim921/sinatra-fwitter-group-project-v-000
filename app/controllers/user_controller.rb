@@ -38,6 +38,9 @@ class UserController < ApplicationController
     end
   end
 
+  get '/login' do
+    
+  end
 
 
   helpers do
