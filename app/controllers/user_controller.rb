@@ -13,11 +13,6 @@ class UserController < ApplicationController
     elsif !logged_in?
       erb :'users/signup'
     end
-    # if logged_in?
-    #   # binding.pry
-    #   redirect '/tweets'
-    # else
-    # end
   end
 
   post '/signup' do
