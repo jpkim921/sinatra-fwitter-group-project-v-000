@@ -17,8 +17,8 @@ class UserController < ApplicationController
       redirect '/signup'
     else
       @user = User.create(params)
+      session[:id] = @user.id
     end
-    session[:id] = @user.id
 
     # binding.pry
     if logged_in?
