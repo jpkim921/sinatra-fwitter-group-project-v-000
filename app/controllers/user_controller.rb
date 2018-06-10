@@ -27,7 +27,7 @@ class UserController < ApplicationController
       @user = User.new(:username => params[:username], :email => params[:email], :password => params[:password])
       @user.save
       session[:user_id] = @user.id
-      
+
       redirect '/tweets'
     end
   end
@@ -36,13 +36,13 @@ class UserController < ApplicationController
 
   helpers do
     def logged_in?
-      !!session[:id]
+      !!session[:user_id]
     end
 
     def current_user
-      User.find(session[:id])
+      User.find(session[:user_id])
     end
   end
 
 end
-# 
+#
