@@ -19,4 +19,4 @@ class UserController < ApplicationController
 
 end
 
-@user = Username.create(username: params["username"], email: params["email"], password: params["password"])
+# @user = Username.create(username: params["username"], email: params["email"], password: params["password"])
