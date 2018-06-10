@@ -7,8 +7,12 @@ class UserController < ApplicationController
   end
 
   get '/signup' do
-    erb :'users/signup'
 
+    if logged_in?
+      redirect '/tweets'
+    elsif !logged_in?
+      erb :'users/signup'
+    end
     # if logged_in?
     #   # binding.pry
     #   redirect '/tweets'
