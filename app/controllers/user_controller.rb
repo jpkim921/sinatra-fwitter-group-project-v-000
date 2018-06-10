@@ -11,7 +11,8 @@ class UsersController < ApplicationController
     if params.values.any?{|param| param == ""}
       redirect '/signup'
     else
-      user = User.create(username: params[:username], email: params[:email], password: params[:password])
+      # user = User.create(username: params[:username], email: params[:email], password: params[:password])
+      user = User.create(params)
       session[:user_id] = user.id
       redirect '/tweets'
     end
