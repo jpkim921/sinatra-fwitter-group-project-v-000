@@ -27,12 +27,11 @@ class UserController < ApplicationController
       redirect '/login'
     end
 
-    get 'login' do
-
-    end
-
   end
 
+  get 'login' do
+
+  end
 
   helpers do
     def logged_in?
