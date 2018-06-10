@@ -4,6 +4,7 @@ class User < ActiveRecord::Base
   # need a method to make username a slug
   # need a class method to find a username by slug
 
+  # the line below is the macro for passwords
   has_secure_password
 
   def slug
