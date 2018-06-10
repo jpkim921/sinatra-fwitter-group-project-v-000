@@ -17,6 +17,7 @@ class UserController < ApplicationController
       redirect '/signup'
     else
       @user = User.create(params)
+      binding.pry
     end
 
     # binding.pry
