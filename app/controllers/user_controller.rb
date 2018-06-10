@@ -36,16 +36,16 @@ class UserController < ApplicationController
   end
 
   # get '/login' do
-  # 
+  #
   #   if logged_in?
   #     redirect '/tweets'
   #   else
   #     erb :'/users/login'
   #   end
   # end
-  # 
+  #
   # post '/login' do
-  # 
+  #
   #   # redirect
   #   # erb :'/user/login'
   # end
