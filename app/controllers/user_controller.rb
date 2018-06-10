@@ -25,11 +25,11 @@ class UserController < ApplicationController
     end
 
     # binding.pry
-    if logged_in?
-      redirect '/tweets'
-    else
-      redirect '/login'
-    end
+    # if logged_in?
+    #   redirect '/tweets'
+    # else
+    #   redirect '/login'
+    # end
 
   end
 
