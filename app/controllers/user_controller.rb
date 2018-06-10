@@ -7,6 +7,7 @@ class UserController < ApplicationController
   end
 
   get '/signup' do
+    pry
     if !logged_in?
       erb :'users/signup'
     else
