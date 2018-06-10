@@ -27,6 +27,10 @@ class UserController < ApplicationController
       redirect '/login'
     end
 
+    get 'login' do
+
+    end
+
   end
 
 
